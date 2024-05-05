@@ -21,7 +21,7 @@ public class CheckBoxInteraction {
 		//click on Notification Checkbox
 		driver.findElement(By.id("j_idt87:j_idt91")).click();
 		
-		boolean text = driver.findElement(By.id("j_idt87:msg_container")).isDisplayed();
+		String text = driver.findElement(By.className("ui-growl-title")).getText();
 		System.out.println("*********************************");
 		System.out.println(text);
 		
