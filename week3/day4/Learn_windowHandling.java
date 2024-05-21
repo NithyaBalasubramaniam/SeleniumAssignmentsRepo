@@ -37,9 +37,13 @@ public class Learn_windowHandling {
 	    
 	    //Navigating to particular window - child window
 	    driver.switchTo().window(childwindow.get(1));
+	    
 	    //Getting title of the window
 	    String title2 = driver.getTitle();
 	    System.out.println("After Clicking :Title :" +title2);
+	    
+	    driver.close();
+	    //driver.quit();
 	    
 	    
 	    
